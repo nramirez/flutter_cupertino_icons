@@ -6,3 +6,7 @@ this is just a quick viewer to make it easier choosing new icons.
 TODO:
 - Add Images
 - Add Search
+
+# WIP
+
+![http://g.recordit.co/375qeazAhG.gif](http://g.recordit.co/375qeazAhG.gif)
