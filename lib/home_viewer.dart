@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_cupertino_icons/icons_list.dart';
 
 import 'icon_row_item.dart';
 
@@ -8,19 +9,11 @@ class HomeViewer extends StatefulWidget {
 }
 
 class _HomeViewerState extends State<HomeViewer> {
-  List<IconRowData> getAllIcons() {
-    return [
-      IconRowData('add', CupertinoIcons.add),
-      IconRowData('circle', CupertinoIcons.circle)
-    ];
-  }
-
   @override
   Widget build(BuildContext context) {
-    final icons = getAllIcons();
     return CupertinoPageScaffold(
       child: CustomScrollView(
-        semanticChildCount: icons.length,
+        semanticChildCount: IconRowData.allIcons.length,
         slivers: <Widget>[
           CupertinoSliverNavigationBar(
             largeTitle: Text('Cupertino Icons'),
@@ -30,11 +23,11 @@ class _HomeViewerState extends State<HomeViewer> {
             minimum: const EdgeInsets.only(top: 8),
             sliver: SliverList(delegate: SliverChildBuilderDelegate(
               (context, index) {
-                if (index < icons.length) {
+                if (index < IconRowData.allIcons.length) {
                   return IconRowItem(
                     index: index,
-                    rowData: icons[index],
-                    lastItem: index == icons.length - 1,
+                    rowData: IconRowData.allIcons[index],
+                    lastItem: index == IconRowData.allIcons.length - 1,
                   );
                 }
                 return null;

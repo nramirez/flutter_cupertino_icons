@@ -1,11 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class IconRowData {
-  final IconData icon;
-  final String name;
-
-  const IconRowData(this.name, this.icon);
-}
+import 'icons_list.dart';
 
 class IconRowItem extends StatelessWidget {
   const IconRowItem({this.rowData, this.index, this.lastItem});
