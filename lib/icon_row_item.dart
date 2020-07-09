@@ -21,12 +21,9 @@ class IconRowItem extends StatelessWidget {
       ),
       child: Row(
         children: <Widget>[
-          ClipRRect(
-            borderRadius: BorderRadius.circular(4),
-            child: Icon(
-              rowData.icon,
-              size: 32,
-            ),
+          Icon(
+            rowData.icon,
+            size: 32,
           ),
           Expanded(
             child: Padding(
@@ -38,13 +35,13 @@ class IconRowItem extends StatelessWidget {
                   Text(rowData.name,
                       style: TextStyle(
                         color: Color.fromRGBO(0, 0, 0, 0.8),
-                        fontSize: 18,
+                        fontSize: 20,
                         fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.normal,
                       )),
                   const Padding(padding: EdgeInsets.only(top: 8)),
                   Text(
-                    'Unicode => ${rowData.icon.codePoint}',
+                    'Unicode: ${rowData.icon.codePoint}',
                     style: TextStyle(
                       color: Color(0xFF8E8E93),
                       fontSize: 13,
@@ -65,8 +62,8 @@ class IconRowItem extends StatelessWidget {
       row,
       Padding(
         padding: const EdgeInsets.only(
-          left: 100,
-          right: 16,
+          left: 10,
+          right: 10,
         ),
         child: Container(
           height: 1,
