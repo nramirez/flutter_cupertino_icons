@@ -23,7 +23,10 @@ class IconRowItem extends StatelessWidget {
         children: <Widget>[
           ClipRRect(
             borderRadius: BorderRadius.circular(4),
-            child: Icon(rowData.icon),
+            child: Icon(
+              rowData.icon,
+              size: 32,
+            ),
           ),
           Expanded(
             child: Padding(
@@ -38,7 +41,16 @@ class IconRowItem extends StatelessWidget {
                         fontSize: 18,
                         fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.normal,
-                      ))
+                      )),
+                  const Padding(padding: EdgeInsets.only(top: 8)),
+                  Text(
+                    'Unicode => ${rowData.icon.codePoint}',
+                    style: TextStyle(
+                      color: Color(0xFF8E8E93),
+                      fontSize: 13,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  )
                 ],
               ),
             ),
