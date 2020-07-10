@@ -10,6 +10,10 @@ class IconRowData {
   final IconData icon;
   final String name;
 
+  static List<IconRowData> search(String term) => IconRowData.allIcons
+      .where((element) => element.name.contains(term))
+      .toList();
+
   static List<IconRowData> get allIcons {
     return const [
       IconRowData('left_chevron', CupertinoIcons.left_chevron),

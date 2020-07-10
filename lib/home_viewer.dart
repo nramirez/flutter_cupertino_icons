@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_cupertino_icons/icons_list.dart';
 
 import 'icon_row_item.dart';
+import 'search_page.dart';
 
 class HomeViewer extends StatefulWidget {
   @override
@@ -17,6 +18,19 @@ class _HomeViewerState extends State<HomeViewer> {
         slivers: <Widget>[
           CupertinoSliverNavigationBar(
             largeTitle: Text('Cupertino Icons'),
+            trailing: CupertinoButton(
+              child: Icon(
+                CupertinoIcons.search,
+                size: 24,
+              ),
+              onPressed: () => {
+                Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) => SearchPage(),
+                    ))
+              },
+            ),
           ),
           SliverSafeArea(
             top: false,
