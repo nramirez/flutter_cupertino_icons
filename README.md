@@ -1,12 +1,13 @@
 # flutter_cupertino_icons
-I found myself pretty lost trying to figure out which one of all the icons I want to use
-this is just a quick viewer to make it easier choosing new icons.
+I didn't find an easy way to easily visualize all the icons from the cupertino library [here](https://pub.dev/packages/cupertino_icons).
+One can [see a png](https://github.com/flutter/cupertino_icons/blob/master/map.png) but they are not actually linked to dart class here => [CupertinoIcons](https://api.flutter.dev/flutter/cupertino/CupertinoIcons-class.html).
+
+I created this app to easily see them all whenever I'm debating what to use next.
+
+# List of all the icons
+![http://g.recordit.co/e4iQK3XjTN.gif](http://g.recordit.co/e4iQK3XjTN.gif)
 
 
-TODO:
-- Add Images
-- Add Search
+# Search
+![http://g.recordit.co/obF0sZuwe4.gif](http://g.recordit.co/obF0sZuwe4.gif)
 
-# WIP
-
-![http://g.recordit.co/375qeazAhG.gif](http://g.recordit.co/375qeazAhG.gif)
